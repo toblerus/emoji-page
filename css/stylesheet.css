@@ -17,8 +17,13 @@
 
 .scrollingBG {
   display:block;
-  width:100vw;
-  height:100vh;
+  width:100%;
+  height:100%;
   background-image:url("https://emoji-page.einfachtobi.com/img/emoji.png");
+  background-size: cover;
   animation: bgScroll 20s linear infinite;
+}
+
+html, body {
+    overflow: auto;
 }

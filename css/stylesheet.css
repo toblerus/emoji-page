@@ -1,32 +1,24 @@
-#tech-slideshow {
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-}
-#tech-slideshow > div {
-    height: 200px;
-    width: 2526px;
-    background: url(https://emoji-page.einfachtobi.com/img/emoji.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    
-    -moz-transition:  opacity 0.5s ease-out; 
-       -o-transition: opacity 0.5s ease-out; 
-  -webkit-transition: opacity 0.5s ease-out; 
-      -ms-transition: opacity 0.5s ease-out; 
 
-    -webkit-animation: moveSlideshow 60s linear infinite;
-    -moz-animation:    moveSlideshow 60s linear infinite;
-    
+/*
+  specify the scroll x (or y) with the width (or height) of the images
+  In this case, the image dimension is :
+  width: 1920px;
+  height: 808px;
+*/
+
+@keyframes bgScroll {
+  0% {
+    background-position : 0px 0px
+  }
+  100% {
+    background-position : 0px -808px
+  }
 }
 
-@-webkit-keyframes moveSlideshow {
-    0% { left: 0; }
-    100% { left: -1684px; }
-}
-@-moz-keyframes moveSlideshow {
-    0% { left: 0; }
-    100% { left: -1684px; }
+.scrollingBG {
+  display:block;
+  width:100vw;
+  height:100vh;
+  background-image:url("https://emoji-page.einfachtobi.com/img/emoji.png");
+  animation: bgScroll 20s linear infinite;
 }

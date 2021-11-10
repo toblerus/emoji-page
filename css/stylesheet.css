@@ -4,8 +4,8 @@
     overflow: hidden;
 }
 #tech-slideshow > div {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 2526px;
     background: url(https://emoji-page.einfachtobi.com/img/emoji.png);
     position: absolute;
     top: 0;

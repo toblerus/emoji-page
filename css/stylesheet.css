@@ -4,9 +4,9 @@
     overflow: hidden;
 }
 #tech-slideshow > div {
-    height: 200px;
-    width: 2526px;
-    background: url(https://toblerus.github.io/Seattle.jpg);
+    height: 100%;
+    width: 100%;
+    background: url(https://emoji-page.einfachtobi.com/img/emoji.png);
     position: absolute;
     top: 0;
     left: 0;
